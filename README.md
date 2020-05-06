@@ -37,11 +37,19 @@ Follow these steps for completing your project.
 
 Your challenge for this module: write tests for both the `App.js` component and the `Episodesjs` component. Take note of where the state is being managed, where the async call is, and where different data pieces are being rendered. Understanding all of this will be important so you know how to test each component.
 
-[ ] Where is the state being managed?
 
-[ ] Where is the Async call?
+Notes:
+-------------------------------------------------------------------------------
+[x] Where is the state being managed?
+  The state is being managed entirely within App.js.
+-------------------------------------------------------------------------------
+[x] Where is the Async call?
+  There's an async call in fetchShow.js, and in a useEffect hook inside App.js.
+-------------------------------------------------------------------------------
+[x] Where are the different pieces of data being rendered?
+  The show state is being rendered right in App.js. The seasons state is also being rendered in App.js and also being run through a prop in Episodes.js. So is the selectedSeason state.
+-------------------------------------------------------------------------------
 
-[ ] Where are the different pieces of data being rendered?
 
 **Moving the async call**
 
